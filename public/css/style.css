@@ -1,0 +1,62 @@
+body{
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#background {
+    background: linear-gradient(185deg, #262261, #652c90);
+    background-size: 200% 200%;
+    height: 600px;
+    color: #fff;
+    position: relative;
+
+    -webkit-animation: gradientBg 7s ease infinite;
+    -moz-animation: gradientBg 7s ease infinite;
+    animation: gradientBg 7s ease infinite;
+}
+
+@-webkit-keyframes gradientBg {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@-moz-keyframes gradientBg {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+@keyframes gradientBg { 
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+
+#player {
+    position: absolute;
+    top: 343px;
+    left: 10px;
+}
+
+#scores {
+    background: #f6b319;
+}
+
+h1{
+    color: #EF4036;
+    font-family: 'Oswald';
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background: #EF4036;
+}
+
+p {
+    color: white;
+    font-size: 16px;
+}
