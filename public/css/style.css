@@ -2,6 +2,6 @@
     visibility: hidden;
 }
 
-.emotion{
-    background: red;
+#inspo-content {
+    visibility: hidden;
 }
