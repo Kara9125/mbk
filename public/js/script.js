@@ -3,11 +3,11 @@ $(document).ready(function(){
     
     $('div#happy').on('click', function(e){
             e.preventDefault();
+            $('#content').empty();
             $('#inspo-content').css('visibility', 'visible');
             $('#video-pill').on('click', function(e){
                 $('#content').empty();
                 e.preventDefault;
-                $('#video-content').empty();
                 $('#content').append('<div class="col-xs-12 col-sm-6 col-sm-offset-3 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/m5yCOSHeYn4" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 col-sm-6 col-sm-offset-3 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/keibTBgigQ8" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 col-sm-6 col-sm-offset-3 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/kZlXWp6vFdE" frameborder="0" allowfullscreen></iframe></div>');
             })
             $('#song-pill').on('click', function(e){
@@ -26,6 +26,7 @@ $(document).ready(function(){
 
         $('div#sad').on('click', function(e){
             e.preventDefault();
+            $('#content').empty();
             var emotion = $(this)[0].id;
             console.log(emotion);
             $('#inspo-content').css('visibility', 'visible');
@@ -51,6 +52,7 @@ $(document).ready(function(){
 
         $('div#turnt-down').on('click', function(e){
             e.preventDefault();
+            $('#content').empty();
             $('#inspo-content').css('visibility', 'visible');
             $('#video-pill').on('click', function(e){
                 $('#content').empty();
