@@ -1,36 +1,45 @@
 $(document).ready(function(){
     console.log('hello');
     
-    happyVid = ['m5yCOSHeYn4', 'keibTBgigQ8', 'kZlXWp6vFdE'];
-    happySongs = ['']
-    
-        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/58831841&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-    $('div.emotion').on('click', function(e){
-        e.preventDefault();
-        var emotion = $(this)[0].id;
-        $('#inspo-content').css('visibility', 'visible');
-        $('#video-pill').on('click', function(e){
-            e.preventDefault;
-            $('#inspo-content').empty();
-            if (emotion === 'happy'){
-                for(i=0; i < happyVid.length; i++){
-                    console.log(happyVid[i]);
-                    if(i === 0){
-                        $('#video-content').append('<div class="col-xs-12"><iframe width="100%" height="315" src="https://www.youtube.com/embed/'+ happyVid[i]+'" frameborder="0" allowfullscreen></iframe></div>');
-                    }
-                    else{
-                        $('#video-content').append('<div class="col-xs-12 col-sm-4"><iframe width="100%" height="315" src="https://www.youtube.com/embed/'+ happyVid[i]+'" frameborder="0" allowfullscreen></iframe></div>')
-                    }
-                }
-            }
+    $('div#happy').on('click', function(e){
+            e.preventDefault();
+            $('#inspo-content').css('visibility', 'visible');
+            $('#video-pill').on('click', function(e){
+                $('#content').empty();
+                e.preventDefault;
+    //            $('#video-content').empty();
+                $('#content').append('<div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/m5yCOSHeYn4" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/keibTBgigQ8" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/kZlXWp6vFdE" frameborder="0" allowfullscreen></iframe></div>');
+            })
+            $('#song-pill').on('click', function(e){
+                $('#content').empty();
+                e.preventDefault;
+                //            $('#video-content').empty();
+                $('#content').append('<div class="col-xs-12 video-container"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/191075103&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/keibTBgigQ8" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/kZlXWp6vFdE" frameborder="0" allowfullscreen></iframe></div>');
+            })
         })
-        console.log(emotion);
-        
 
-    })
-    
-    
-    
-    
-    
-}); //Closing Document Ready tags
+        $('div#sad').on('click', function(e){
+            e.preventDefault();
+            var emotion = $(this)[0].id;
+            console.log(emotion);
+            $('#inspo-content').css('visibility', 'visible');
+            $('#video-pill').on('click', function(e){
+                $('#video-content').empty();
+                e.preventDefault;
+            //            $('#video-content').empty();
+                $('#video-content').append('<div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/FMtcB9Oa7cI" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/zU58h3bAb6I" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/kZlXWp6vFdE" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/y6Sxv-sUYtM" frameborder="0" allowfullscreen></iframe></div>');
+                })
+        })
+
+        $('div#turnt-down').on('click', function(e){
+            e.preventDefault();
+            $('#inspo-content').css('visibility', 'visible');
+            $('#video-pill').on('click', function(e){
+                $('#video-content').empty();
+                e.preventDefault;
+        //            $('#video-content').empty();
+                $('#video-content').append('<div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/y6Sxv-sUYtM" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/keibTBgigQ8" frameborder="0" allowfullscreen></iframe></div><div class="col-xs-12 video-container"><iframe width="100%" height="315" src="https://www.youtube.com/embed/kZlXWp6vFdE" frameborder="0" allowfullscreen></iframe></div>');
+                })
+        })
+    }) //Closing Document Ready tags
+

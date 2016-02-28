@@ -25,20 +25,34 @@
   </head>
 
 <body>
+    <nav class="navbar navbar-default" style="background: #333; margin-bottom: 0px;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Inspirational Messages</a>
+            </div>
+        </div><!-- /.container-fluid -->
+    </nav>
     <div class="container-fluid" style="background: #6FE0FD;">
        <div class="row">
            <div class="col-xs-12 text-center">
                <h1>How are you feeling?</h1>
            </div>
-           <div class="col-xs-10 col-xs-offset-1">
+           <div class="col-xs-10 col-xs-offset-1 emotion">
                <br><br><br>
-               <div id="happy" class="col-xs-4 emotion text-center">
+               <div id="happy" class="col-xs-4 text-center">
                    <img src="images/emojis/happy.svg" width="50%" alt="">
                </div>
-               <div id="sad" class="col-xs-4 emotion text-center">
+               <div id="sad" class="col-xs-4 text-center">
                    <img src="images/emojis/sad.svg" width="50%" alt="">
                </div>
-               <div id="turnt-down" class="col-xs-4 emotion text-center">
+               <div id="turnt-down" class="col-xs-4 text-center">
                    <img src="images/emojis/turnt-down.svg" width="50%" alt="">
                    <br><br><br>
                </div>
@@ -53,12 +67,12 @@
             </div>
             <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 text-center">
                 <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a id="#" href="song-content">Songs</a></li>
+                    <li role="presentation" class="active"><a id="song-pill" href="#">Songs</a></li>
                     <li role="presentation"><a id="video-pill" href="#">Videos</a></li>
                     <li role="presentation"><a id="quote-pill" href="#">Quotes</a></li>
                 </ul>
             </div>
-            <div id="video-content" class="col-xs-12">
+            <div id="content" class="col-xs-12">
                 
             </div>
         </div>
