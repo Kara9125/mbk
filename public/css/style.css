@@ -1,4 +1,4 @@
-body{
+ body{
     font-family: 'Open Sans';
 }
 nav.navbar.navbar-default {
@@ -97,6 +97,7 @@ nav.navbar.navbar-default {
     padding: 50px;
     font-size: 18px;
     color: #fff;
+    border: 5px solid #FFF;
 }
 
 #happy-quote2 {
@@ -106,6 +107,7 @@ nav.navbar.navbar-default {
     font-size: 18px;
     color: #fff;
     margin-top: 40px;
+    border: 5px solid #FFF;
 }
 
 #sad-quote1 {
