@@ -61,3 +61,25 @@ body{
     color: #fff;
     margin-top: 40px;
 }
+
+#sad-quote1 {
+    background-image: url('../images/bg/quotebackground3.jpg');
+    padding: 50px;
+    font-size: 18px;
+    color: #333;
+}
+
+#sad-quote2 {
+    background-image: url('../images/bg/quotebackground4.jpg');
+    padding: 50px;
+    font-size: 18px;
+    color: #333;
+    margin-top: 40px;
+}
+
+footer{
+    margin 0;
+    background-color: lightslategray;
+    color: #fff;
+    padding-top: 15px;
+}
