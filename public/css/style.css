@@ -10,6 +10,29 @@ nav.navbar.navbar-default {
     height: 2px;
     background: #dcdcdc;
 }
+#happy {
+    padding-bottom: 20px;
+}
+
+#happy:hover {
+    border-bottom: solid 3px #F0982E;
+}
+
+#sad {
+    padding-bottom: 20px;
+}
+
+#sad:hover {
+    border-bottom: solid 3px #518EC7;
+}
+
+#turnt-down {
+    padding-bottom: 20px;
+}
+
+#turnt-down:hover {
+    border-bottom: solid 3px #E55855;
+}
 
 #inspo-type {
     visibility: hidden;
