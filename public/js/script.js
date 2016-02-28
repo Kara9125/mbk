@@ -1,6 +1,12 @@
 $(document).ready(function(){
     console.log('hello');
     
+    $('#logo').on('click', function(e){
+        e.preventDefault();
+        console.log(';helo');
+        $('#content').css('visibility', 'visible');
+    })
+    
     $('div#happy').on('click', function(e){
             e.preventDefault();
             $('#content').empty();

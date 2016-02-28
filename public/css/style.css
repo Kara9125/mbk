@@ -1,13 +1,22 @@
 body{
     font-family: 'Open Sans';
 }
+nav.navbar.navbar-default {
+    border-radius: 0px;
+    border: none;
+}
+
+.hr {
+    height: 2px;
+    background: #dcdcdc;
+}
 
 #inspo-type {
     visibility: hidden;
 }
 
 #inspo-content {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .video-container {
@@ -49,6 +58,7 @@ body{
 
 #happy-quote1 {
     background-image: url('../images/bg/quotebackground1.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: 18px;
     color: #fff;
@@ -56,6 +66,7 @@ body{
 
 #happy-quote2 {
     background-image: url('../images/bg/quotebackground2.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: 18px;
     color: #fff;
@@ -64,6 +75,7 @@ body{
 
 #sad-quote1 {
     background-image: url('../images/bg/quotebackground3.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: 18px;
     color: #333;
@@ -71,6 +83,7 @@ body{
 
 #sad-quote2 {
     background-image: url('../images/bg/quotebackground4.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: 18px;
     color: #333;
@@ -79,6 +92,7 @@ body{
 
 #sad-quote3 {
     background-image: url('../images/bg/quotebackground5.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: 18px;
     color: #fff;
@@ -87,6 +101,7 @@ body{
 
 #turnt-quote1 {
     background-image: url('../images/bg/quotebackground3.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: 18px;
     color: #333;
@@ -94,6 +109,7 @@ body{
 
 #turnt-quote2 {
     background-image: url('../images/bg/quotebackground4.jpg');
+    background-size: cover;
     padding: 50px;
     font-size: 18px;
     color: #333;
