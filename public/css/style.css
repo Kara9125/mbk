@@ -77,6 +77,29 @@ body{
     margin-top: 40px;
 }
 
+#sad-quote3 {
+    background-image: url('../images/bg/quotebackground5.jpg');
+    padding: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+#turnt-quote1 {
+    background-image: url('../images/bg/quotebackground3.jpg');
+    padding: 50px;
+    font-size: 18px;
+    color: #333;
+}
+
+#turnt-quote2 {
+    background-image: url('../images/bg/quotebackground4.jpg');
+    padding: 50px;
+    font-size: 18px;
+    color: #333;
+    margin-top: 40px;
+}
+
 footer{
     margin 0;
     background-color: lightslategray;
