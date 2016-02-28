@@ -10,6 +10,7 @@ $(document).ready(function(){
     $('div#happy').on('click', function(e){
             e.preventDefault();
             $('#content').empty();
+            $('#inspo-type').css('visibility', 'visible');
             $('#inspo-content').css('visibility', 'visible');
             $('#video-pill').on('click', function(e){
                 $('#content').empty();
@@ -33,6 +34,7 @@ $(document).ready(function(){
         $('div#sad').on('click', function(e){
             e.preventDefault();
             $('#content').empty();
+            $('#inspo-type').css('visibility', 'visible');
             var emotion = $(this)[0].id;
             console.log(emotion);
             $('#inspo-content').css('visibility', 'visible');
@@ -52,13 +54,14 @@ $(document).ready(function(){
                 $('#content').empty();
                 e.preventDefault;
                 //            $('#video-content').empty();
-                $('#content').append('<div id="sad-quote1" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">“When I despair, I remember that all through history the way of truth and love have always won. There have been tyrants and murderers, and for a time, they can seem invincible, but in the end, they always fall. Think of it--always.” ― Mahatma Gandhi<br><br></div><div id="sad-quote2" class="col-xs-10 col-xs-offset1 col-sm-6 col-sm-offset-3 text-center">"Never be sad for what is over,just be glad that it was once yours…"<br>-Unknown</div><div id="sad-quote3" class="col-xs-10 col-xs-offset1 col-sm-6 col-sm-offset-3 text-center">“We tend to forget that happiness doesn’t come as a result of getting something we don’t have, but rather of recognizing and appreciating what we do have.”<br>- Frederick Keonig</div>');
+                $('#content').append('<div id="sad-quote1" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">“When I despair, I remember that all through history the way of truth and love have always won. There have been tyrants and murderers, and for a time, they can seem invincible, but in the end, they always fall. Think of it--always.” ― Mahatma Gandhi<br><br></div><div id="sad-quote2" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">"Never be sad for what is over,just be glad that it was once yours…"<br>-Unknown</div><div id="sad-quote3" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">“We tend to forget that happiness doesn’t come as a result of getting something we don’t have, but rather of recognizing and appreciating what we do have.”<br>- Frederick Keonig</div>');
             })
         })
 
         $('div#turnt-down').on('click', function(e){
             e.preventDefault();
             $('#content').empty();
+            $('#inspo-type').css('visibility', 'visible');
             $('#inspo-content').css('visibility', 'visible');
             $('#video-pill').on('click', function(e){
                 $('#content').empty();
@@ -76,7 +79,7 @@ $(document).ready(function(){
                 $('#content').empty();
                 e.preventDefault;
                 //            $('#video-content').empty();
-                $('#content').append('<div id="turnt-quote1" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">"If you are not willing to risk the usual you will have to settle for the ordinary."<br>-Jim Rohn<br><br></div><div id="turnt-quote2" class="col-xs-10 col-xs-offset1 col-sm-6 col-sm-offset-3 text-center">Success is liking yourself, liking what you do, and liking how you do it."<br>-Maya Angelou</div>');
+                $('#content').append('<div id="turnt-quote1" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">"If you are not willing to risk the usual you will have to settle for the ordinary."<br>-Jim Rohn<br><br></div><div id="turnt-quote2" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">Success is liking yourself, liking what you do, and liking how you do it."<br>-Maya Angelou</div>');
             })
         })
     }) //Closing Document Ready tags
