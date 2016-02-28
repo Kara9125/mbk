@@ -9,6 +9,9 @@ $(document).ready(function(){
     
     $('div#happy').on('click', function(e){
             e.preventDefault();
+            $('#happy').addClass('selected-happy');
+            $('#sad').removeClass('selected-sad');
+            $('#turnt-down').removeClass('selected-turnt-down');
             $('#content').empty();
             $('#inspo-type').css('visibility', 'visible');
             $('#inspo-content').css('visibility', 'visible');
@@ -33,6 +36,9 @@ $(document).ready(function(){
 
         $('div#sad').on('click', function(e){
             e.preventDefault();
+            $('#sad').addClass('selected-sad');
+            $('#happy').removeClass('selected-happy');
+            $('#turnt-down').removeClass('selected-turnt-down');
             $('#content').empty();
             $('#inspo-type').css('visibility', 'visible');
             var emotion = $(this)[0].id;
@@ -60,6 +66,9 @@ $(document).ready(function(){
 
         $('div#turnt-down').on('click', function(e){
             e.preventDefault();
+            $('#turnt-down').addClass('selected-turnt-down');
+            $('#sad').removeClass('selected-sad');
+            $('#happy').removeClass('selected-happy');
             $('#content').empty();
             $('#inspo-type').css('visibility', 'visible');
             $('#inspo-content').css('visibility', 'visible');

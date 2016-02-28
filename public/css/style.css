@@ -18,6 +18,18 @@ nav.navbar.navbar-default {
     border-bottom: solid 3px #F0982E;
 }
 
+.selected-happy {
+    border-bottom: solid 3px #F0982E;
+}
+
+.selected-sad {
+    border-bottom: solid 3px #518EC7;
+}
+
+.selected-turnt-down {
+    border-bottom: solid 3px #E55855;
+}
+
 #sad {
     padding-bottom: 20px;
 }
@@ -221,4 +233,29 @@ footer{
         -webkit-transform: translate3d(0,-4px,0);
         transform: translate3d(0,-4px,0);
     }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
