@@ -1,3 +1,7 @@
+body{
+    font-family: 'Open Sans';
+}
+
 #inspo-type {
     visibility: hidden;
 }
@@ -20,4 +24,40 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#song-pill {
+    padding-top: 10px;
+    background: linear-gradient(#fbba9a, #e45c87);
+    color: #fff;
+    border: solid 5px #fff;
+}
+
+#video-pill {
+    padding-top: 10px;
+    background: linear-gradient(#00d2b0, #34b9c1);
+    color: #fff;
+    border: solid 5px #fff;
+}
+
+#quote-pill {
+    padding-top: 10px;
+    background: linear-gradient(#e323f4, #9f35e4);
+    color: #fff;
+    border: solid 5px #fff;
+}
+
+#happy-quote1 {
+    background-image: url('../images/bg/quotebackground1.jpg');
+    padding: 50px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#happy-quote2 {
+    background-image: url('../images/bg/quotebackground2.jpg');
+    padding: 50px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 40px;
 }

@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700' rel='stylesheet' type='text/css'>
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -29,12 +29,14 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+<!--
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+-->
                 <a class="navbar-brand" href="#">Inspirational Messages</a>
             </div>
         </div><!-- /.container-fluid -->
@@ -47,32 +49,38 @@
            <div class="col-xs-10 col-xs-offset-1 emotion">
                <br><br><br>
                <div id="happy" class="col-xs-4 text-center">
-                   <img src="images/emojis/happy.svg" width="50%" alt="">
+                   <img src="images/emojis/happy.svg" width="100%" alt="">
                </div>
                <div id="sad" class="col-xs-4 text-center">
-                   <img src="images/emojis/sad.svg" width="50%" alt="">
+                   <img src="images/emojis/sad.svg" width="100%" alt="">
                </div>
                <div id="turnt-down" class="col-xs-4 text-center">
-                   <img src="images/emojis/turnt-down.svg" width="50%" alt="">
+                   <img src="images/emojis/turnt-down.svg" width="100%" alt="">
                    <br><br><br>
                </div>
                
            </div>
        </div>
-    </div> 
+    </div>
+     
     <div id="inspo-content" class="container-fluid" style="background: #fff;">
         <div class="row">
-            <div class="col-xs-12 text-center">
-                <h1>Get Inspired</h1>
+           <br><br>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center">
+               <div id="song-pill" class="col-xs-4">
+                   <img src="images/icons/music.svg" width="65%" alt="">
+                   <p>Music</p>
+               </div>
+                <div id="video-pill" class="col-xs-4">
+                    <img src="images/icons/video.svg" width="65%" alt="">
+                    <p>Videos</p>
+                </div>
+                <div id="quote-pill" class="col-xs-4">
+                    <img src="images/icons/quote.svg" width="65%" alt="">
+                    <p>Quotes</p>
+                </div>
             </div>
-            <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 text-center">
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a id="song-pill" href="#">Songs</a></li>
-                    <li role="presentation"><a id="video-pill" href="#">Videos</a></li>
-                    <li role="presentation"><a id="quote-pill" href="#">Quotes</a></li>
-                </ul>
-            </div>
-            <div id="content" class="col-xs-12">
+            <div id="content" class="col-xs-12" style="margin-top: 45px;">
                 
             </div>
         </div>
